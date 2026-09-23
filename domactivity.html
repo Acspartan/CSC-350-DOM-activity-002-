@@ -1,34 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-   <meta charset="utf-8"/>  
-    <title>Lab 9</title>   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
-    <link href="ch09-proj2.css" rel="stylesheet">
-    <script src="paintings.json"></script> 
-    <script src="ch09-proj2.js"></script> 
+    <!-- Defines the character encoding for the webpage -->
+    <meta charset="utf-8">
+
+    <!-- Title displayed on the browser tab -->
+    <title>Lab 9</title>
+
+    <!-- Normalize CSS makes browser styling more consistent -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          rel="stylesheet">
+
+    <!-- Imports the Roboto Condensed font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+          rel="stylesheet">
+
+    <!-- Links the CSS file used to style this activity -->
+    <link href="domactivity.css" rel="stylesheet">
+
+    <!-- Loads the painting data used by the JavaScript -->
+    <script src="paintings.json"></script>
+
+    <!-- Loads the JavaScript used for DOM manipulation and events -->
+    <script src="domactivity.js"></script>
 </head>
+
 <body>
 
+<!-- Main heading for the DOM activity -->
 <h1>Delegation + Mouse Event Handling</h1>
+
+<!-- Main grid container holds the painting list and painting details -->
 <main class="grid-container">
-   <section id="paintings">
-      <ul></ul>
-   </section>
-   <section id="details">
-         <div id="summary">
+
+    <!-- Paintings section contains the list of painting thumbnails -->
+    <section id="paintings">
+
+        <!-- Empty list with thumbnail images by domactivity.js -->
+        <ul></ul>
+
+    </section>
+
+    <!-- Details section displays information about the selected painting -->
+    <section id="details">
+
+        <!-- Summary section for the selected painting -->
+        <div id="summary">
+
+            <!-- Displays title of the selected painting -->
             <h2 id="title"></h2>
+
+            <!-- Displays artist of the selected painting -->
             <h3 id="artist"></h3>
-         </div>         
-      <figure>
-         <image id="full">
-         
-      </figure>
-      <div id="description"></div>
-      
-   </section>
+
+        </div>
+
+        <!-- Displays large painting and feature rectangles -->
+        <figure></figure>
+
+        <!-- Displays feature description when the mouse is over a rectangle -->
+        <div id="description"></div>
+
+    </section>
+
 </main>
-   
+
 </body>
 </html>
